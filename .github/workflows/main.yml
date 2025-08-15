@@ -12,3 +12,11 @@ jobs:
           python-version: '3.10' # Specify the Python version to use
       - name: Run Python script
         run: python -c "print('Hello, World from Python!')" # Execute a Python command directly
+      - name: Polaris Scan
+        id: polaris-scan
+        uses: blackduck-inc/black-duck-security-scan@v2
+        with:
+        ### SCANNING: Required fields
+         polaris_server_url: https://poc.polaris.blackduck.com/
+         polaris_access_token: 'rvb1uibn0h59d9e6tnba154882n2el9s9vdkges9v2f12dnf9s9t72bbc0e8hq9pldrd3nuh3t49a'
+         polaris_assessment_types: "SAST"
