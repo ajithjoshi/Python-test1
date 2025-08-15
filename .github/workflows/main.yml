@@ -27,3 +27,4 @@ jobs:
          polaris_assessment_types: "SAST"
          polaris_application_name: Ajit-test
          polaris_project_name: test1
+         polaris_branch_name: polaris_main
